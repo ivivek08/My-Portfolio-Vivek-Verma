@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Vivek Kumar Verma — Software Engineer &amp; Computer Science Student</title>
+
+  <!-- Typography: Bebas Neue for display, Plus Jakarta Sans for body, JetBrains Mono for code & tech -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Preloader Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-progress-track">
+        <div id="loader-bar" class="loader-progress-bar"></div>
+      </div>
+      <div class="loader-info">
+        <span class="loader-text">Loading</span>
+        <span id="loader-percent" class="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Video Canvas (Fixed Viewport) -->
+  <div class="canvas-background-stage">
+    <canvas id="frame-canvas"></canvas>
+    <div class="canvas-vignette-overlay"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo">VIVEK VERMA</a>
+
+      <nav class="nav-pill">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="mailto:viivek008@gmail.com" class="btn-primary btn-cta">
+        <span>Get in Touch</span>
+        <span class="btn-icon">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="section-hero">
+      <div class="hero-container">
+
+        <!-- Large Backdrop Name Typography -->
+        <div class="hero-name-container" id="hero-name">
+          <span class="hero-greeting">Software Engineering &amp; Data Systems</span>
+          <h1 class="hero-name">Vivek Kumar Verma</h1>
+        </div>
+
+        <!-- Hero Bottom Grid -->
+        <div class="hero-grid" id="hero-grid">
+
+          <!-- Left Column: Clear, concise technical focus -->
+          <div class="hero-left">
+            <div class="meta-tag">
+              <span>B.Tech CSE • Quantum University '26</span>
+            </div>
+
+            <p class="hero-headline">
+              Computer Science student building data-intensive applications, SQL analytics pipelines, and computer
+              vision systems.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary">
+                <span>View Projects</span>
+                <span class="btn-icon">↓</span>
+              </a>
+              <a href="#about" class="btn-ghost">
+                <span>About Me</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Restrained Engineering Profile -->
+          <div class="hero-right">
+            <div class="profile-card">
+              <div class="profile-status">
+                <span class="status-indicator-dot"></span>
+                <span class="status-indicator-text">Open to Engineering Roles (2025/2026)</span>
+              </div>
+
+              <div class="profile-facts">
+                <div class="fact-row">
+                  <span class="fact-label">Location</span>
+                  <span class="fact-value">Haridwar, Uttarakhand, India</span>
+                </div>
+                <div class="fact-row">
+                  <span class="fact-label">Focus</span>
+                  <span class="fact-value">Python, SQL, ML, OpenCV</span>
+                </div>
+                <div class="fact-row">
+                  <span class="fact-label">Recognition</span>
+                  <span class="fact-value">Microsoft Imagine Cup '23 Regional Finalist</span>
+                </div>
+                <div class="fact-row">
+                  <span class="fact-label">Leadership</span>
+                  <span class="fact-value">VP, Entrepreneurship Cell (2023–24)</span>
+                </div>
+              </div>
+
+              <div class="profile-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="profile-link">GitHub ↗</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="profile-link">LinkedIn ↗</a>
+                <a href="mailto:viivek008@gmail.com" class="profile-link">Email ↗</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Subtle Tech Stack Bar (Restrained & Typographic) -->
+    <div class="tech-strip">
+      <div class="section-container tech-strip-inner">
+        <span class="tech-strip-item">Python</span>
+        <span class="tech-strip-sep">/</span>
+        <span class="tech-strip-item">PostgreSQL &amp; SQL</span>
+        <span class="tech-strip-sep">/</span>
+        <span class="tech-strip-item">OpenCV</span>
+        <span class="tech-strip-sep">/</span>
+        <span class="tech-strip-item">Scikit-Learn</span>
+        <span class="tech-strip-sep">/</span>
+        <span class="tech-strip-item">Pandas &amp; NumPy</span>
+        <span class="tech-strip-sep">/</span>
+        <span class="tech-strip-item">AWS Cloud</span>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-about">
+      <div class="section-container">
+        <div class="about-grid">
+
+          <!-- Left Label -->
+          <div class="about-left">
+            <span class="section-num">01</span>
+            <h2 class="section-label-text">About Me</h2>
+          </div>
+
+          <!-- Right Bio -->
+          <div class="about-right">
+            <p class="about-lead">
+              I am a pre-final year Computer Science &amp; Engineering undergraduate at Quantum University (Class of
+              2026). My technical focus is on backend development, relational database engineering with PostgreSQL, and
+              applied machine learning.
+            </p>
+            <p class="about-body">
+              I enjoy working where algorithmic problem-solving meets practical utility — whether that means dissecting
+              relational databases to extract meaningful revenue metrics, integrating OpenCV for real-time biometric
+              verification, or modeling consumer behaviors using unsupervised clustering algorithms.
+            </p>
+            <p class="about-body">
+              Alongside technical projects, I served as Vice President of the Entrepreneurship Cell at Quantum
+              University, organizing startup bootcamps and fostering peer projects. In 2023, our accessibility tool was
+              selected as a Regional Finalist in the Microsoft Imagine Cup.
+            </p>
+
+            <div class="about-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Degree</span>
+                <span class="spec-val">B.Tech Computer Science &amp; Engineering</span>
+                <span class="spec-sub">Quantum University (2022–2026)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Location</span>
+                <span class="spec-val">Haridwar, Uttarakhand, India</span>
+                <span class="spec-sub">Open to remote &amp; on-site relocations</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="section-projects">
+      <div class="section-container">
+
+        <div class="section-heading-wrap">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-desc">
+            Technical projects focused on relational database analysis, computer vision systems, and machine learning.
+          </p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- Project 1: Online Music Store Data Analysis -->
+          <article class="project-entry">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-meta-year">2025</span>
+                <h3 class="project-title">Online Music Store Data Analysis</h3>
+                <span class="project-domain">Relational Database &amp; Business Intelligence</span>
+              </div>
+              <div class="project-tech-list">
+                <span class="code-tag">SQL</span>
+                <span class="code-tag">PostgreSQL</span>
+                <span class="code-tag">pgAdmin 4</span>
+                <span class="code-tag">CTEs &amp; Subqueries</span>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Analyzed an online digital music store database using advanced SQL queries to uncover sales trends,
+              customer purchasing behavior, and revenue growth opportunities across international markets.
+            </p>
+
+            <div class="project-details-grid">
+              <div class="detail-block">
+                <span class="detail-label">Problem Solved</span>
+                <p>Extracted actionable business intelligence from complex multi-table transactional schemas to
+                  determine high-margin customer cohorts and international revenue drivers.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Technical Implementation</span>
+                <p>Authored modular SQL queries using multi-table <code>JOIN</code>s, window functions, and Common Table
+                  Expressions (CTEs). Evaluated top artists, popular genres, and customer lifetime value distributions.
+                </p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Tools &amp; Environment</span>
+                <p>PostgreSQL, pgAdmin 4 for query plan evaluation, data exploration, and schema integrity validation.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Face Recognition Attendance System -->
+          <article class="project-entry">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-meta-year">2024</span>
+                <h3 class="project-title">Face Recognition Attendance System</h3>
+                <span class="project-domain">Computer Vision &amp; Desktop Software</span>
+              </div>
+              <div class="project-tech-list">
+                <span class="code-tag">Python</span>
+                <span class="code-tag">OpenCV</span>
+                <span class="code-tag">Tkinter</span>
+                <span class="code-tag">NumPy</span>
+                <span class="code-tag">Pandas</span>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Developed an automated biometric attendance logging application in Python, utilizing OpenCV for real-time
+              video capture and facial recognition to eliminate manual attendance sheets.
+            </p>
+
+            <div class="project-details-grid">
+              <div class="detail-block">
+                <span class="detail-label">Problem Solved</span>
+                <p>Eliminated manual roll-call inefficiencies and proxy attendance by engineering an automated
+                  camera-based facial verification pipeline.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Technical Implementation</span>
+                <p>Integrated OpenCV with webcam video streaming for real-time face detection and feature matching.
+                  Designed a user registration system to store facial encodings, and used NumPy and Pandas to log
+                  timestamped attendance directly into CSV reports.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Interface &amp; Packaging</span>
+                <p>Built a native Tkinter desktop user interface for administrators to register new users, view webcam
+                  feeds, and export daily attendance logs.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Customer Segmentation Model -->
+          <article class="project-entry">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-meta-year">2024</span>
+                <h3 class="project-title">Customer Segmentation Model</h3>
+                <span class="project-domain">Unsupervised Machine Learning</span>
+              </div>
+              <div class="project-tech-list">
+                <span class="code-tag">Python</span>
+                <span class="code-tag">K-Means</span>
+                <span class="code-tag">Scikit-learn</span>
+                <span class="code-tag">Pandas</span>
+                <span class="code-tag">Seaborn</span>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Constructed an unsupervised customer segmentation pipeline to analyze transactional behaviors and divide
+              customer bases into distinct clusters for targeted marketing strategy.
+            </p>
+
+            <div class="project-details-grid">
+              <div class="detail-block">
+                <span class="detail-label">Problem Solved</span>
+                <p>Enabled data-driven customer grouping based on spending habits and income profiles, replacing
+                  arbitrary demographic categorization with algorithmic clusters.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Technical Implementation</span>
+                <p>Applied K-Means clustering, determining the optimal number of centroids ($K$) using the Elbow Method
+                  and Silhouette Analysis. Cleaned and normalized feature distributions with Pandas and Scikit-learn.
+                </p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Visualization &amp; Impact</span>
+                <p>Rendered multi-cluster scatter plots with Matplotlib and Seaborn to clearly identify high-value vs.
+                  churn-risk buyer cohorts.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section-skills">
+      <div class="section-container">
+
+        <div class="section-heading-wrap">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">
+            Technologies and tools applied in academic projects, coursework, and personal engineering work.
+          </p>
+        </div>
+
+        <div class="skills-editorial-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Languages</h3>
+            <p class="skill-group-items">Python, SQL, C++, C</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Machine Learning &amp; Vision</h3>
+            <p class="skill-group-items">OpenCV, Scikit-learn, TensorFlow, Tkinter</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data Analytics &amp; Scraping</h3>
+            <p class="skill-group-items">Pandas, NumPy, Matplotlib, Seaborn, Power BI, Excel, BeautifulSoup</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Databases &amp; RDBMS</h3>
+            <p class="skill-group-items">PostgreSQL, MySQL, pgAdmin 4, Relational Schema Design</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Developer Tools</h3>
+            <p class="skill-group-items">VS Code, PyCharm, Jupyter Notebook, Git, GitHub</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Cloud Infrastructure</h3>
+            <p class="skill-group-items">AWS Academy Cloud Architecting (VPC, EC2, S3, IAM, Architecture)</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience & Leadership Section -->
+    <section id="experience" class="section-experience">
+      <div class="section-container">
+
+        <div class="section-heading-wrap">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Leadership &amp; Competitions</h2>
+          <p class="section-desc">
+            Organizational leadership and competitive hackathon participation.
+          </p>
+        </div>
+
+        <div class="experience-list">
+
+          <div class="exp-row">
+            <div class="exp-period">2023 — 2024</div>
+            <div class="exp-content">
+              <h3 class="exp-role">Vice President — Entrepreneurship Cell (E-Cell)</h3>
+              <span class="exp-institution">Quantum University • Roorkee, India</span>
+              <p class="exp-desc">
+                Organized university-wide startup bootcamps, technical workshops, and ideation sessions. Mentored
+                student teams on building prototypes and presenting technical pitches.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <div class="exp-period">2023</div>
+            <div class="exp-content">
+              <h3 class="exp-role">Microsoft Imagine Cup 2023 — Regional Finalist</h3>
+              <span class="exp-institution">Microsoft</span>
+              <p class="exp-desc">
+                Selected as a Regional Finalist in Microsoft's global student tech competition. Built an AI-driven
+                accessibility tool designed to assist users with computer navigation.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <div class="exp-period">2023</div>
+            <div class="exp-content">
+              <h3 class="exp-role">Accenture Innovation Challenge 2023 — Participant</h3>
+              <span class="exp-institution">Accenture</span>
+              <p class="exp-desc">
+                Explored AI applications for environmental sustainability and carbon footprint reduction in software
+                systems.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Credentials Section -->
+    <section id="education" class="section-education">
+      <div class="section-container">
+
+        <div class="section-heading-wrap">
+          <span class="section-num">05</span>
+          <h2 class="section-title">Education &amp; Credentials</h2>
+        </div>
+
+        <div class="edu-cred-grid">
+
+          <!-- Education Column -->
+          <div class="edu-side">
+            <h3 class="sub-column-title">Academic Background</h3>
+
+            <div class="edu-record">
+              <div class="edu-record-top">
+                <span class="edu-year">2022 — 2026</span>
+                <span class="edu-metric">CGPA: 6.7</span>
+              </div>
+              <h4 class="edu-degree-name">B.Tech in Computer Science &amp; Engineering</h4>
+              <span class="edu-college">Quantum University • Roorkee, India</span>
+              <p class="edu-notes">
+                Coursework: Data Structures &amp; Algorithms, Database Management Systems, Object-Oriented Programming
+                (C++/Python), Operating Systems, Computer Networks.
+              </p>
+            </div>
+
+            <div class="edu-record">
+              <div class="edu-record-top">
+                <span class="edu-year">2020 — 2021</span>
+                <span class="edu-metric">Score: 77%</span>
+              </div>
+              <h4 class="edu-degree-name">Intermediate (Class XII)</h4>
+              <span class="edu-college">Maa Saraswati Public School • Haridwar, India</span>
+              <p class="edu-notes">Science Stream (Physics, Chemistry, Mathematics).</p>
+            </div>
+          </div>
+
+          <!-- Credentials Column -->
+          <div class="cred-side">
+            <h3 class="sub-column-title">Certifications</h3>
+
+            <div class="cred-record">
+              <span class="cred-issuer">AWS Academy</span>
+              <h4 class="cred-name">AWS Academy Cloud Architecting</h4>
+              <p class="cred-desc">
+                Course completion covering scalable cloud design, multi-tier architectures, VPC networking, security,
+                and storage on Amazon Web Services.
+              </p>
+            </div>
+
+            <div class="cred-record">
+              <span class="cred-issuer">HackerRank</span>
+              <h4 class="cred-name">Verified Skills: Problem Solving &amp; SQL</h4>
+              <p class="cred-desc">
+                Demonstrated practical algorithmic problem solving, Python programming fundamentals, and relational
+                database queries.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials & Endorsements Section -->
+    <section id="testimonials" class="section-testimonials">
+      <div class="section-container">
+
+        <div class="section-heading-wrap">
+          <span class="section-num">06</span>
+          <h2 class="section-title">Testimonials &amp; Endorsements</h2>
+          <p class="section-desc">
+            Observations from project collaborators, hackathon teammates, and academic peers.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1: Hackathon Teammate (Imagine Cup) -->
+          <article class="testimonial-card">
+            <div class="testimonial-context">
+              <span class="testimonial-tag">Microsoft Imagine Cup '23</span>
+              <span class="quote-symbol">“</span>
+            </div>
+            <p class="testimonial-text">
+              Collaborating with Vivek during the Microsoft Imagine Cup was a standout experience. His composure under
+              competition deadlines and sharp problem-solving skills helped our team reach the Regional Finals. He
+              consistently focuses on practical engineering that solves real accessibility barriers.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Hackathon Collaborator</span>
+              <span class="author-role">Imagine Cup Regional Finalist Team</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 2: E-Cell Leadership Peer -->
+          <article class="testimonial-card">
+            <div class="testimonial-context">
+              <span class="testimonial-tag">Entrepreneurship Cell</span>
+              <span class="quote-symbol">“</span>
+            </div>
+            <p class="testimonial-text">
+              As Vice President of the Entrepreneurship Cell, Vivek was instrumental in coordinating our flagship
+              startup bootcamps and technical workshops. He has a rare ability to translate complex software concepts
+              for peers while keeping teams organized, motivated, and focused on delivery.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">E-Cell Core Team Member</span>
+              <span class="author-role">Entrepreneurship Cell, Quantum University</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 3: Academic / Project Peer -->
+          <article class="testimonial-card">
+            <div class="testimonial-context">
+              <span class="testimonial-tag">Academic Projects</span>
+              <span class="quote-symbol">“</span>
+            </div>
+            <p class="testimonial-text">
+              Vivek brings rigor to every project he takes on. Whether designing modular relational schemas with
+              PostgreSQL or developing real-time OpenCV attendance tracking pipelines, he writes maintainable, efficient
+              code and always takes the time to thoroughly understand the underlying systems.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Project Collaborator &amp; Peer</span>
+              <span class="author-role">Department of CSE, Quantum University</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <footer id="contact" class="site-footer">
+      <div class="section-container">
+
+        <div class="footer-inner">
+          <div class="footer-left">
+            <span class="section-num">07</span>
+            <h2 class="footer-title">Get in Touch</h2>
+            <p class="footer-subtext">
+              I am actively seeking software engineering internships and graduate roles. If you have an opportunity or
+              would like to discuss my work, feel free to reach out.
+            </p>
+
+            <div class="footer-contact-actions">
+              <button type="button" class="email-clipboard-btn" id="email-copy-pill" title="Click to copy email">
+                <span class="email-text">viivek008@gmail.com</span>
+                <span class="copy-badge" id="copy-badge">Copy</span>
+              </button>
+              <a href="tel:+918439583525" class="footer-tel-link">+91-8439583525</a>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-nav-col">
+              <span class="footer-col-header">Sections</span>
+              <ul class="footer-links-list">
+                <li><a href="#hero">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav-col">
+              <span class="footer-col-header">Profiles</span>
+              <ul class="footer-links-list">
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a></li>
+                <li><a href="mailto:viivek008@gmail.com">Direct Email ↗</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav-col">
+              <span class="footer-col-header">Local Time</span>
+              <span id="footer-live-time" class="footer-time-display">--:--:-- IST</span>
+              <span class="footer-loc-label">Haridwar, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-line">
+          <span>© 2026 Vivek Kumar Verma</span>
+          <a href="#hero" class="back-to-top-link">Back to top ↑</a>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
